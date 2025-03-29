@@ -11,7 +11,7 @@ resource "aws_instance" "myec2-0736" {
     Create_date_time = formatdate("YYYY-MM-DD hh:mm:ss ZZZ", timestamp())
     created2 = formatdate("YYYYMMDDhhmmss", timestamp())
     created-date = timestamp()
-    env = hml
+    env = "hml"
   }
     #lifecycle { ignore_changes = [tags["Create_date_time"], tags["Name"]]}
     #lifecycle { ignore_changes = [tags["Create_date_time"]]}
