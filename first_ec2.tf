@@ -6,7 +6,7 @@ resource "aws_instance" "myec2-0736" {
   ami           = "ami-012967cc5a8c9f891"
   instance_type = "t2.micro"
   tags = {
-    Name = "myec2-${formatdate("mmss", timestamp())}"
+    Name = "ec2darede-${formatdate("mmss", timestamp())}"
     created = formatdate("YYYYMMDD-HHmmss", timestamp())
     Create_date_time = formatdate("YYYY-MM-DD hh:mm:ss ZZZ", timestamp())
     created2 = formatdate("YYYYMMDDhhmmss", timestamp())
